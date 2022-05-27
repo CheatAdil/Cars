@@ -77,12 +77,14 @@ namespace KartGame.KartSystems
             UpdateWheelFromCollider(rearLeftWheel);
             UpdateWheelFromCollider(rearRightWheel);
         }
-
+        
         void UpdateWheelFromCollider(Wheel wheel)
         {
+            
             wheel.wheelCollider.GetWorldPose(out Vector3 position, out Quaternion rotation);
             wheel.wheelTransform.position = position;
             wheel.wheelTransform.rotation = rotation;
+           
         }
     }
 }
