@@ -5,7 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Target
+<<<<<<< HEAD
   - Ride
+=======
+>>>>>>> parent of 50ceb82 (Added "ladno")
   layers:
   - Default
   - TransparentFX

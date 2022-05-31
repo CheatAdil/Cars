@@ -934,7 +934,11 @@ GameObject:
   - component: {fileID: 3734112143386800643}
   m_Layer: 2
   m_Name: Bot
+<<<<<<< HEAD
   m_TagString: Ride
+=======
+  m_TagString: Untagged
+>>>>>>> parent of 50ceb82 (Added "ladno")
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1637,7 +1641,11 @@ GameObject:
   - component: {fileID: 3734112144157646335}
   m_Layer: 13
   m_Name: KartBouncingCapsule
+<<<<<<< HEAD
   m_TagString: Ride
+=======
+  m_TagString: Untagged
+>>>>>>> parent of 50ceb82 (Added "ladno")
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
