@@ -72,13 +72,22 @@ namespace KartGame.KartSystems {
             Vector3 targ = Vector3.Scale(target[target_id].position , new Vector3(1, 0, 1));
             float d1 = Vector3.Distance(sensor_L.position, targ);
             float d2 = Vector3.Distance(sensor_R.position, targ);
-            if (d1 - d2 > 0.1) 
+            float dif = d1 - d2;
+            if (dif > 0.1) 
             {
-                return 1;
+                if (dif > 0.2)
+                {
+                    return 1;
+                }
+                else return 0.5f;
             }
-            else if (d1 - d2 < -0.1) 
+            else if (dif < -0.1) 
             {
-                return -1;
+                if (dif < -0.2) 
+                {
+                    return -1;
+                }
+                else return -0.5f;
             }
             return 0;
         }
