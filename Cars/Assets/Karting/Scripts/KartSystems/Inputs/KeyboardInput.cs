@@ -30,15 +30,16 @@ namespace KartGame.KartSystems {
             {
                 forward = true;
             }
-
-            for (int i = 0; i < target.Length; i++) 
+            if (target.Length != 0)
             {
-                if (i != target_id) 
+                for (int i = 0; i < target.Length; i++)
                 {
-                    target[i].GetComponent<BoxCollider>().enabled = false;
+                    if (i != target_id)
+                    {
+                        target[i].GetComponent<BoxCollider>().enabled = false;
+                    }
                 }
             }
-
         }
 
         public override InputData GenerateInput() {
