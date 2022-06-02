@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 1994855608469288569}
   - component: {fileID: 1994855608469288570}
   - component: {fileID: 1994855608469288571}
-  m_Layer: 2
+  - component: {fileID: 5514444796743442118}
+  m_Layer: 0
   m_Name: Bot
   m_TagString: Ride
   m_Icon: {fileID: 0}
@@ -223,6 +224,20 @@ MonoBehaviour:
   - {fileID: 0}
   target_id: 0
   Looping: 1
+--- !u!136 &5514444796743442118
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994855607190067209}
+  m_Material: {fileID: 13400000, guid: a46ba4e273ba0684f90f4acc0fdf44d5, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.45
+  m_Height: 2
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.6, z: 0}
 --- !u!1 &1994855607232251771
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1994855607328455856}
   - component: {fileID: 1994855607328455871}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: engine_start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -621,7 +636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1994855607377914440}
   - component: {fileID: 1994855607377914295}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Drift
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -750,7 +765,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1994855607563035659}
   - component: {fileID: 1994855607563035658}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: engine-idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -877,7 +892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1994855607639148888}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: sensor_L
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -909,7 +924,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1994855607648054585}
   - component: {fileID: 1994855607648054584}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: RearLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -972,7 +987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1994855607805789769}
   - component: {fileID: 1994855607805789768}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: KartBouncingCapsule
   m_TagString: Ride
   m_Icon: {fileID: 0}
@@ -1004,7 +1019,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1994855607805789770}
   m_Material: {fileID: 13400000, guid: a46ba4e273ba0684f90f4acc0fdf44d5, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.45
   m_Height: 2
   m_Direction: 2
@@ -1104,7 +1119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1994855607941317781}
   - component: {fileID: 1994855607941317780}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: ArcadeEngineAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1161,7 +1176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1994855607953902453}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: WheelColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1197,7 +1212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1994855608220177761}
   - component: {fileID: 1994855608220177760}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: engine-running
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1324,7 +1339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1994855608300670483}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: sensor_R
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1356,7 +1371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1994855608392294219}
   - component: {fileID: 1994855608392294218}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: engine-reverse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1484,7 +1499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1994855608547156538}
   - component: {fileID: 1994855608547156537}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: FrontRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1547,7 +1562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1994855608781688801}
   - component: {fileID: 1994855608781688802}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: RearRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1609,7 +1624,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1994855608784944934}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: AimingCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1726,7 +1741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1994855608972972129}
   - component: {fileID: 1994855608972972128}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: FrontLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}

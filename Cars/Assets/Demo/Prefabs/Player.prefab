@@ -95,7 +95,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6632712365557272634}
   - component: {fileID: 2411772961930183691}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: engine-reverse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3679983189076648584}
   - component: {fileID: 4181489076808874259}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Drift
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 863766594106815942}
   - component: {fileID: 863766594106815941}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: engine_start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,7 +480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 863766595220099178}
   - component: {fileID: 863766595220099176}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: ArcadeEngineAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 863766595879599973}
   - component: {fileID: 863766595879599972}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: engine-running
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -666,7 +666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 863766595900794405}
   - component: {fileID: 863766595900794404}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: engine-idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -878,7 +878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1105029617108280322}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: AimingCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -985,6 +985,51 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1942905376328953273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4530214016447255651}
+  - component: {fileID: 6418372169808824758}
+  m_Layer: 0
+  m_Name: RocketLauncher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4530214016447255651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942905376328953273}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.673, z: 1.191}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5522627618635477474}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6418372169808824758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942905376328953273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd06071834a26ff4a8ac65b824d3301a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rocket: {fileID: 5531425298857541391, guid: 8cb944d75dbd07e4bbe48eee2e883c75, type: 3}
 --- !u!1 &5522627618635477477
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,7 +1044,8 @@ GameObject:
   - component: {fileID: 5522627618635477476}
   - component: {fileID: 5522627618635477503}
   - component: {fileID: 5522627618635477473}
-  m_Layer: 2
+  - component: {fileID: 188665915197877901}
+  m_Layer: 0
   m_Name: Player
   m_TagString: Ride
   m_Icon: {fileID: 0}
@@ -1022,6 +1068,7 @@ Transform:
   - {fileID: 5522627619314851514}
   - {fileID: 863766595220099178}
   - {fileID: 1105029617108280322}
+  - {fileID: 4530214016447255651}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1163,6 +1210,20 @@ MonoBehaviour:
   target: []
   target_id: 0
   Looping: 0
+--- !u!136 &188665915197877901
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5522627618635477477}
+  m_Material: {fileID: 13400000, guid: a46ba4e273ba0684f90f4acc0fdf44d5, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.45
+  m_Height: 2
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.66, z: 0}
 --- !u!1 &5522627618703913387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,7 +1234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5522627618703913386}
   - component: {fileID: 5522627618703913385}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: FrontRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1236,7 +1297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5522627618995597147}
   - component: {fileID: 5522627618995597146}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: RearLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1298,7 +1359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5522627619314851514}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: WheelColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1334,7 +1395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5522627619821660791}
   - component: {fileID: 5522627619821660790}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: KartBouncingCapsule
   m_TagString: Ride
   m_Icon: {fileID: 0}
@@ -1366,7 +1427,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 5522627619821660792}
   m_Material: {fileID: 13400000, guid: a46ba4e273ba0684f90f4acc0fdf44d5, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.45
   m_Height: 2
   m_Direction: 2
@@ -1381,7 +1442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5522627620079982237}
   - component: {fileID: 5522627620079982236}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: FrontLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1444,7 +1505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5522627620090043176}
   - component: {fileID: 5522627620090043175}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: RearRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

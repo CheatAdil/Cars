@@ -17,7 +17,8 @@ namespace KartGame.KartSystems {
         [SerializeField] private bool AI;
         [SerializeField] private Transform sensor_L;
         [SerializeField] private Transform sensor_R;
-        [SerializeField] private Transform[] target;
+        private Transform[] target;
+        [SerializeField] private Transform targerFatherObject;
         [SerializeField] private int target_id;
         [SerializeField] private bool Looping;
 
@@ -30,6 +31,12 @@ namespace KartGame.KartSystems {
             {
                 forward = true;
             }
+            target = new Transform[targerFatherObject.childCount];
+            for (int i = 0; i < targerFatherObject.childCount; i++)
+			{
+                target[i] = targerFatherObject.GetChild(i);
+            }
+
             if (target.Length != 0)
             {
                 for (int i = 0; i < target.Length; i++)
