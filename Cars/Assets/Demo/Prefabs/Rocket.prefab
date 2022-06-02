@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5531425298624796640}
   - component: {fileID: 5531425298624796654}
   - component: {fileID: 5531425298624796655}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: nosle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4824,7 +4824,7 @@ GameObject:
   - component: {fileID: 5531425298857541390}
   - component: {fileID: 5531425298857541388}
   - component: {fileID: 5531425298857541387}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4860,7 +4860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dir: {x: 1, y: 0, z: 0}
-  speed: 100
+  speed: 150
   radius: 20
   force: 40000
   Explosion: {fileID: 2198020849886517254, guid: 666677cb30a2b1c4192439cc9bafee5d,
@@ -4894,7 +4894,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1001 &5531425300253171845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4908,7 +4908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 70b1c37933702514a9b7c1cded1042d3, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70b1c37933702514a9b7c1cded1042d3, type: 3}
       propertyPath: m_RootOrder
